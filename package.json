@@ -1,0 +1,19 @@
+{
+  "name": "countries-states-providences",
+  "version": "1.0.0",
+  "description": "List of countries and their associated states/providences",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZechariahMcPherson/Countries-States-Providences.git"
+  },
+  "author": "Zechariah McPherson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZechariahMcPherson/Countries-States-Providences/issues"
+  },
+  "homepage": "https://github.com/ZechariahMcPherson/Countries-States-Providences#readme"
+}

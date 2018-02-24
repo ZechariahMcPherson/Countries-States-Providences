@@ -2,8 +2,7 @@ import csv
 
 def main():
 
-
-    with open('test.csv', 'wt', newline='') as csvfile:
+    with open('test.csv', 'wt',  newline='') as csvfile:
         spamwriter = csv.writer(csvfile,
           quotechar='|', quoting=csv.QUOTE_MINIMAL)
         print("hi")

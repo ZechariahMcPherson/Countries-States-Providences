@@ -10,13 +10,19 @@ def parseCountriesTxt(newFile, dataFile):
         with open(dataFile, newline='', encoding='utf-8') as csvfile2:
              spamreader = csv.reader(csvfile2, delimiter='\t')
              for row in spamreader:
-                 if(spamreader.line_num == 81):
-                    print(row)
+                 #if(spamreader.line_num == 81):
+                    #print(row)
                  #rows that don't contain data start with #
                  if(row[0][0] != "#"):
-                     #print(row[0][0])
-                     #print(row)
-                     spamwriter.writerow(row)
+                     line = []
+
+                     #trims extra whitespaces
+                     for col in row:
+                         #print(row[0][0])
+                         #print(row)
+                         line.append(col.strip(' \t\n\r'))
+
+                     spamwriter.writerow(line)
 
 #takes the countryInfo csv and pulls specific columns
 def parseCountriesCsv(newFile, dataFile):
@@ -39,7 +45,29 @@ def parseCountriesCsv(newFile, dataFile):
                  spamwriter.writerow(line)
 
 
+def parseAdminCodes(newFile, dataFile):
+    with open(newFile, 'wt',  newline='', encoding='utf-8') as csvfile:
+        spamwriter = csv.writer(csvfile, delimiter=',',
+          quotechar='"', quoting=csv.QUOTE_ALL)
+
+        with open(dataFile, newline='', encoding='utf-8') as csvfile2:
+             spamreader = csv.reader(csvfile2, delimiter='\t')
+             for row in spamreader:
+                 #rows that don't contain data start with #
+                 if(row[0][0] != "#"):
+                     line = []
+
+                     #trims extra whitespaces
+                     for col in row:
+                         #print(row[0][0])
+                         #print(row)
+                         line.append(col.strip(' \t\n\r'))
+
+                     spamwriter.writerow(line)
+
+
 def main():
     parseCountriesTxt('test.csv','../DATA/countryInfo.txt')
     parseCountriesCsv('testFilter.csv', './test.csv')
+    parseAdminCodes('testAdminCodes.csv','../DATA/admin1CodesASCII.txt')
 main()

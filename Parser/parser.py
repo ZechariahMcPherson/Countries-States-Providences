@@ -5,10 +5,10 @@ import os
 """
     error handling for for creating a file
 """
-def createFile(create):
+def createFile(create, option):
 
     try:
-        file = open(create, 'wt',  newline='', encoding='utf-8')
+        file = open(create, option,  newline='', encoding='utf-8')
         return file
 
     except OSError:
@@ -36,7 +36,7 @@ def openFile(openFile):
 def countryInfoTxt2Csv(destination, source, removeComments):
 
     #creates csv file and a writer to write to that file
-    newCsv = createFile(destination)
+    newCsv = createFile(destination, 'wt')
     newCsvWriter = csv.writer(newCsv, delimiter=',',
       quotechar='"', quoting=csv.QUOTE_ALL)
 
@@ -61,6 +61,35 @@ def countryInfoTxt2Csv(destination, source, removeComments):
     newCsv.close()
     dataTxt.close()
 
+
+"""
+    converts txt to csv for admin1admin1CodesASCII.txt
+
+    online src file:
+    http://download.geonames.org/export/dump/admin1CodesASCII.txt
+"""
+def admin1CodesASCIITxt2Csv(destination, source):
+
+    #creates csv file and a writer to write to that file
+    newCsv = createFile(destination, 'wt')
+    newCsvWriter = csv.writer(newCsv, delimiter=',',
+      quotechar='"', quoting=csv.QUOTE_ALL)
+
+    #opens data file and creates a reader for that file
+    dataTxt  = openFile(source)
+    dataTxtReader = csv.reader(dataTxt, delimiter='\t')
+
+    for row in dataTxtReader:
+
+        line = []
+
+        #trims extra whitespaces
+        for col in row:
+            line.append(col.strip(' \t\n\r'))
+
+        newCsvWriter.writerow(line)
+
+
 """
     controls flow of parser
 """
@@ -76,5 +105,7 @@ def main():
         sys.exit()
 
     countryInfoTxt2Csv('./cleanDATA/countryInfo.csv', './srcDATA/countryInfo.txt', False)
+
+    admin1CodesASCIITxt2Csv('./cleanDATA/admin1CodesASCII.csv', './srcDATA/admin1CodesASCII.txt')
 
 main()

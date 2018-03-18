@@ -33,7 +33,7 @@ def openFile(openFile):
     online src file:
     http://download.geonames.org/export/dump/countryInfo.txt
 """
-def countryInfoTxt2Csv(destination, source, removeComments):
+def countryInfoTxt2Csv(source, destination, removeComments):
 
     #creates csv file and a writer to write to that file
     newCsv = createFile(destination, 'wt')
@@ -58,8 +58,10 @@ def countryInfoTxt2Csv(destination, source, removeComments):
 
             newCsvWriter.writerow(line)
 
+    #closed open files
     newCsv.close()
     dataTxt.close()
+
 
 
 """
@@ -68,7 +70,7 @@ def countryInfoTxt2Csv(destination, source, removeComments):
     online src file:
     http://download.geonames.org/export/dump/admin1CodesASCII.txt
 """
-def admin1CodesASCIITxt2Csv(destination, source):
+def admin1CodesASCIITxt2Csv(source, destination):
 
     #creates csv file and a writer to write to that file
     newCsv = createFile(destination, 'wt')
@@ -89,23 +91,72 @@ def admin1CodesASCIITxt2Csv(destination, source):
 
         newCsvWriter.writerow(line)
 
+    #closed open files
+    newCsv.close()
+    dataTxt.close()
+
+"""
+    gets ISO, ISO3, country name and geonameid from countryInfo.csv
+    and writes them to new file
+"""
+def filterCountryInfo(source, destination):
+
+    #creates csv file and a writer to write to that file
+    newCsv = createFile(destination, 'wt')
+    newCsvWriter = csv.writer(newCsv, delimiter=',',
+      quotechar='"', quoting=csv.QUOTE_ALL)
+
+    #opens data file and creates a reader for that file
+    dataTxt  = openFile(source)
+    dataTxtReader = csv.reader(dataTxt, delimiter=',')
+
+    for row in dataTxtReader:
+        colNum = 0
+        line = []
+
+        try:
+            #row[0] ISO
+            #row[1] ISO3
+            #row[4] country name in English
+            #row[16] geonameid
+            line.append(row[0])
+            line.append(row[1])
+            line.append(row[4])
+            line.append(row[16])
+        except IndexError:
+            line = null
+
+        newCsvWriter.writerow(line)
+
+
+
+    #closed open files
+    newCsv.close()
+    dataTxt.close()
 
 """
     controls flow of parser
 """
 def main():
 
-    #ensures folder for storing clean data exists
-    if(not os.path.exists('./cleanDATA')):
-        os.makedirs('./cleanDATA')
-
     #ensures that the folder storing the source data exists
     if(not os.path.exists('./srcDATA')):
         print("Error: srcDATA folder is missing")
         sys.exit()
 
-    countryInfoTxt2Csv('./cleanDATA/countryInfo.csv', './srcDATA/countryInfo.txt', False)
+    #ensures folder for storing clean data exists
+    if(not os.path.exists('./cleanDATA')):
+        os.makedirs('./cleanDATA')
 
-    admin1CodesASCIITxt2Csv('./cleanDATA/admin1CodesASCII.csv', './srcDATA/admin1CodesASCII.txt')
+    #ensures folder for storing finalized DATA exists
+    if(not os.path.exists('./DATA')):
+        os.makedirs('./DATA')
+
+
+    countryInfoTxt2Csv('./srcDATA/countryInfo.txt', './cleanDATA/countryInfo.csv', False)
+
+    admin1CodesASCIITxt2Csv('./srcDATA/admin1CodesASCII.txt', './cleanDATA/admin1CodesASCII.csv')
+
+    filterCountryInfo('./cleanDATA/countryInfo.csv', './DATA/coutryStateProvince.csv')
 
 main()

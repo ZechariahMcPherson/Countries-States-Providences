@@ -96,8 +96,7 @@ def admin1CodesASCIITxt2Csv(source, destination):
     dataTxt.close()
 
 """
-    gets ISO, ISO3, country name and geonameid from countryInfo.csv
-    and writes them to new file
+    filters countryInfo.csv for ISO, ISO3, country name and geonameid
 """
 def filterCountryInfo(source, destination):
 
@@ -111,7 +110,6 @@ def filterCountryInfo(source, destination):
     dataTxtReader = csv.reader(dataTxt, delimiter=',')
 
     for row in dataTxtReader:
-        colNum = 0
         line = []
 
         try:
@@ -135,6 +133,51 @@ def filterCountryInfo(source, destination):
     dataTxt.close()
 
 """
+    filters admin1CodesASCII.csv for:
+    country ISO: two letters be for '.' stored in column 0
+    state/province two digit code: just gathering this for US
+    english name: for state/province
+    geonameid: for the state/province
+"""
+def filterAdmin1CodesASCII(source, destination):
+
+    #creates csv file and a writer to write to that file
+    newCsv = createFile(destination, 'wt')
+    newCsvWriter = csv.writer(newCsv, delimiter=',',
+      quotechar='"', quoting=csv.QUOTE_ALL)
+
+    #opens data file and creates a reader for that file
+    dataTxt  = openFile(source)
+    dataTxtReader = csv.reader(dataTxt, delimiter=',')
+
+    for row in dataTxtReader:
+        line = []
+
+        #splits "US.SC" into ["US","SC"]
+        colOne = row[0].split('.')
+
+
+        #if "US.SC" write "US","SC"
+        if(colOne[0] == "US"):
+            line.append(colOne[0])
+            line.append(colOne[1])
+
+        #if not us state write "AZ",""
+        else:
+            line.append(colOne[0])
+            line.append("")
+
+        #english state/province name
+        line.append(row[2])
+
+        #geonameid for state/province
+        line.append(row[3])
+
+
+        newCsvWriter.writerow(line)
+
+
+"""
     controls flow of parser
 """
 def main():
@@ -145,18 +188,20 @@ def main():
         sys.exit()
 
     #ensures folder for storing clean data exists
-    if(not os.path.exists('./cleanDATA')):
-        os.makedirs('./cleanDATA')
+    if(not os.path.exists('./csvDATA')):
+        os.makedirs('./csvDATA')
 
     #ensures folder for storing finalized DATA exists
     if(not os.path.exists('./DATA')):
         os.makedirs('./DATA')
 
 
-    countryInfoTxt2Csv('./srcDATA/countryInfo.txt', './cleanDATA/countryInfo.csv', False)
+    countryInfoTxt2Csv('./srcDATA/countryInfo.txt', './csvDATA/countryInfo.csv', False)
 
-    admin1CodesASCIITxt2Csv('./srcDATA/admin1CodesASCII.txt', './cleanDATA/admin1CodesASCII.csv')
+    admin1CodesASCIITxt2Csv('./srcDATA/admin1CodesASCII.txt', './csvDATA/admin1CodesASCII.csv')
 
-    filterCountryInfo('./cleanDATA/countryInfo.csv', './DATA/coutryStateProvince.csv')
+    filterCountryInfo('./csvDATA/countryInfo.csv', './DATA/filteredCountryInfo.csv')
+
+    filterAdmin1CodesASCII('./csvDATA/admin1CodesASCII.csv', './DATA/filteredAdmin1CodesASCII.csv')
 
 main()

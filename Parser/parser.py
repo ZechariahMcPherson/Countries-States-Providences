@@ -33,8 +33,7 @@ def openFile(openFile):
     http://download.geonames.org/export/dump/countryInfo.txt
 """
 
-#
-def countryTxt2Csv(destination, source, removeComments):
+def countryInfoTxt2Csv(destination, source, removeComments):
 
     #creates csv file and a writer to write to that file
     newCsv = createFile(destination)
@@ -67,6 +66,6 @@ def countryTxt2Csv(destination, source, removeComments):
 """
 def main():
 
-    countryTxt2Csv('./cleanDATA/countryInfo.csv', './srcDATA/countryInfo.txt', False)
+    countryInfoTxt2Csv('./cleanDATA/countryInfo.csv', './srcDATA/countryInfo.txt', False)
 
 main()

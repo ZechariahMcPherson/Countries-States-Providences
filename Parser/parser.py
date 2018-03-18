@@ -1,5 +1,6 @@
 import csv
 import sys
+import os
 
 """
     error handling for for creating a file
@@ -32,7 +33,6 @@ def openFile(openFile):
     online src file:
     http://download.geonames.org/export/dump/countryInfo.txt
 """
-
 def countryInfoTxt2Csv(destination, source, removeComments):
 
     #creates csv file and a writer to write to that file
@@ -56,7 +56,7 @@ def countryInfoTxt2Csv(destination, source, removeComments):
                 #print(row)
                 line.append(col.strip(' \t\n\r'))
 
-            spamwriter.writerow(line)
+            newCsvWriter.writerow(line)
 
     newCsv.close()
     dataTxt.close()
@@ -65,6 +65,15 @@ def countryInfoTxt2Csv(destination, source, removeComments):
     controls flow of parser
 """
 def main():
+
+    #ensures folder for storing clean data exists
+    if(not os.path.exists('./cleanDATA')):
+        os.makedirs('./cleanDATA')
+
+    #ensures that the folder storing the source data exists
+    if(not os.path.exists('./srcDATA')):
+        print("Error: srcDATA folder is missing")
+        sys.exit()
 
     countryInfoTxt2Csv('./cleanDATA/countryInfo.csv', './srcDATA/countryInfo.txt', False)
 

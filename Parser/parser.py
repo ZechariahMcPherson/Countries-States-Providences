@@ -176,6 +176,12 @@ def filterAdmin1CodesASCII(source, destination):
 
         newCsvWriter.writerow(line)
 
+    #closed open files
+    newCsv.close()
+    dataTxt.close()
+
+
+
 
 """
     controls flow of parser
@@ -203,5 +209,7 @@ def main():
     filterCountryInfo('./csvDATA/countryInfo.csv', './DATA/filteredCountryInfo.csv')
 
     filterAdmin1CodesASCII('./csvDATA/admin1CodesASCII.csv', './DATA/filteredAdmin1CodesASCII.csv')
+
+
 
 main()

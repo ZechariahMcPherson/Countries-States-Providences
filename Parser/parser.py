@@ -1,6 +1,7 @@
 import csv
 import sys
 import os
+import json
 
 """
     error handling for for creating a file
@@ -106,10 +107,10 @@ def filterCountryInfo(source, destination):
       quotechar='"', quoting=csv.QUOTE_ALL)
 
     #opens data file and creates a reader for that file
-    dataTxt  = openFile(source)
-    dataTxtReader = csv.reader(dataTxt, delimiter=',')
+    dataCsv  = openFile(source)
+    dataCsvReader = csv.reader(dataCsv, delimiter=',')
 
-    for row in dataTxtReader:
+    for row in dataCsvReader:
         line = []
 
         try:
@@ -130,7 +131,7 @@ def filterCountryInfo(source, destination):
 
     #closed open files
     newCsv.close()
-    dataTxt.close()
+    dataCsv.close()
 
 """
     filters admin1CodesASCII.csv for:
@@ -147,10 +148,10 @@ def filterAdmin1CodesASCII(source, destination):
       quotechar='"', quoting=csv.QUOTE_ALL)
 
     #opens data file and creates a reader for that file
-    dataTxt  = openFile(source)
-    dataTxtReader = csv.reader(dataTxt, delimiter=',')
+    dataCsv  = openFile(source)
+    dataCsvReader = csv.reader(dataCsv, delimiter=',')
 
-    for row in dataTxtReader:
+    for row in dataCsvReader:
         line = []
 
         #splits "US.SC" into ["US","SC"]
@@ -178,9 +179,32 @@ def filterAdmin1CodesASCII(source, destination):
 
     #closed open files
     newCsv.close()
-    dataTxt.close()
+    dataCsv.close()
 
+"""
+    takes filteredCountryInfo.csv and converts it to countryInfo.json
+"""
+def countryInfoCsv2Json(source, destination):
 
+    #creates csv file and a writer to write to that file
+    newJson = createFile(destination, 'wt')
+
+    #opens data file and creates a reader for that file
+    dataCsv  = openFile(source)
+    dataCsvReader = csv.reader(dataCsv, delimiter=',')
+
+    for row in dataCsvReader:
+
+        jsonRow = ("{\'ISO\': \'" + row[0] + "\', \'ISO3\' : \'" + row[1]+ "\', \'CountryName\' : \'" + row[2] + "\', \'GeonameId\' : \'" + row[3] + "\'}")
+
+        data = {'ISO' : row[0], 'ISO3' : row[1], 'CountryName' : row[2],
+            'GeonameId' : row[3]}
+
+        json.dump(data, newJson)
+
+    #closed open files
+    newJson.close()
+    dataCsv.close()
 
 
 """
@@ -210,6 +234,6 @@ def main():
 
     filterAdmin1CodesASCII('./csvDATA/admin1CodesASCII.csv', './DATA/filteredAdmin1CodesASCII.csv')
 
-
+    countryInfoCsv2Json('./DATA/filteredCountryInfo.csv', './DATA/countryInfo.json')
 
 main()

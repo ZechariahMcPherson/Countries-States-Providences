@@ -1,0 +1,1514 @@
+[
+{
+    "ISO": "AD",
+    "ISO3": "AND",
+    "CountryName": "Andorra",
+    "GeonameId": "3041565"
+},
+{
+    "ISO": "AE",
+    "ISO3": "ARE",
+    "CountryName": "United Arab Emirates",
+    "GeonameId": "290557"
+},
+{
+    "ISO": "AF",
+    "ISO3": "AFG",
+    "CountryName": "Afghanistan",
+    "GeonameId": "1149361"
+},
+{
+    "ISO": "AG",
+    "ISO3": "ATG",
+    "CountryName": "Antigua and Barbuda",
+    "GeonameId": "3576396"
+},
+{
+    "ISO": "AI",
+    "ISO3": "AIA",
+    "CountryName": "Anguilla",
+    "GeonameId": "3573511"
+},
+{
+    "ISO": "AL",
+    "ISO3": "ALB",
+    "CountryName": "Albania",
+    "GeonameId": "783754"
+},
+{
+    "ISO": "AM",
+    "ISO3": "ARM",
+    "CountryName": "Armenia",
+    "GeonameId": "174982"
+},
+{
+    "ISO": "AO",
+    "ISO3": "AGO",
+    "CountryName": "Angola",
+    "GeonameId": "3351879"
+},
+{
+    "ISO": "AQ",
+    "ISO3": "ATA",
+    "CountryName": "Antarctica",
+    "GeonameId": "6697173"
+},
+{
+    "ISO": "AR",
+    "ISO3": "ARG",
+    "CountryName": "Argentina",
+    "GeonameId": "3865483"
+},
+{
+    "ISO": "AS",
+    "ISO3": "ASM",
+    "CountryName": "American Samoa",
+    "GeonameId": "5880801"
+},
+{
+    "ISO": "AT",
+    "ISO3": "AUT",
+    "CountryName": "Austria",
+    "GeonameId": "2782113"
+},
+{
+    "ISO": "AU",
+    "ISO3": "AUS",
+    "CountryName": "Australia",
+    "GeonameId": "2077456"
+},
+{
+    "ISO": "AW",
+    "ISO3": "ABW",
+    "CountryName": "Aruba",
+    "GeonameId": "3577279"
+},
+{
+    "ISO": "AX",
+    "ISO3": "ALA",
+    "CountryName": "Aland Islands",
+    "GeonameId": "661882"
+},
+{
+    "ISO": "AZ",
+    "ISO3": "AZE",
+    "CountryName": "Azerbaijan",
+    "GeonameId": "587116"
+},
+{
+    "ISO": "BA",
+    "ISO3": "BIH",
+    "CountryName": "Bosnia and Herzegovina",
+    "GeonameId": "3277605"
+},
+{
+    "ISO": "BB",
+    "ISO3": "BRB",
+    "CountryName": "Barbados",
+    "GeonameId": "3374084"
+},
+{
+    "ISO": "BD",
+    "ISO3": "BGD",
+    "CountryName": "Bangladesh",
+    "GeonameId": "1210997"
+},
+{
+    "ISO": "BE",
+    "ISO3": "BEL",
+    "CountryName": "Belgium",
+    "GeonameId": "2802361"
+},
+{
+    "ISO": "BF",
+    "ISO3": "BFA",
+    "CountryName": "Burkina Faso",
+    "GeonameId": "2361809"
+},
+{
+    "ISO": "BG",
+    "ISO3": "BGR",
+    "CountryName": "Bulgaria",
+    "GeonameId": "732800"
+},
+{
+    "ISO": "BH",
+    "ISO3": "BHR",
+    "CountryName": "Bahrain",
+    "GeonameId": "290291"
+},
+{
+    "ISO": "BI",
+    "ISO3": "BDI",
+    "CountryName": "Burundi",
+    "GeonameId": "433561"
+},
+{
+    "ISO": "BJ",
+    "ISO3": "BEN",
+    "CountryName": "Benin",
+    "GeonameId": "2395170"
+},
+{
+    "ISO": "BL",
+    "ISO3": "BLM",
+    "CountryName": "Saint Barthelemy",
+    "GeonameId": "3578476"
+},
+{
+    "ISO": "BM",
+    "ISO3": "BMU",
+    "CountryName": "Bermuda",
+    "GeonameId": "3573345"
+},
+{
+    "ISO": "BN",
+    "ISO3": "BRN",
+    "CountryName": "Brunei",
+    "GeonameId": "1820814"
+},
+{
+    "ISO": "BO",
+    "ISO3": "BOL",
+    "CountryName": "Bolivia",
+    "GeonameId": "3923057"
+},
+{
+    "ISO": "BQ",
+    "ISO3": "BES",
+    "CountryName": "Bonaire, Saint Eustatius and Saba",
+    "GeonameId": "7626844"
+},
+{
+    "ISO": "BR",
+    "ISO3": "BRA",
+    "CountryName": "Brazil",
+    "GeonameId": "3469034"
+},
+{
+    "ISO": "BS",
+    "ISO3": "BHS",
+    "CountryName": "Bahamas",
+    "GeonameId": "3572887"
+},
+{
+    "ISO": "BT",
+    "ISO3": "BTN",
+    "CountryName": "Bhutan",
+    "GeonameId": "1252634"
+},
+{
+    "ISO": "BV",
+    "ISO3": "BVT",
+    "CountryName": "Bouvet Island",
+    "GeonameId": "3371123"
+},
+{
+    "ISO": "BW",
+    "ISO3": "BWA",
+    "CountryName": "Botswana",
+    "GeonameId": "933860"
+},
+{
+    "ISO": "BY",
+    "ISO3": "BLR",
+    "CountryName": "Belarus",
+    "GeonameId": "630336"
+},
+{
+    "ISO": "BZ",
+    "ISO3": "BLZ",
+    "CountryName": "Belize",
+    "GeonameId": "3582678"
+},
+{
+    "ISO": "CA",
+    "ISO3": "CAN",
+    "CountryName": "Canada",
+    "GeonameId": "6251999"
+},
+{
+    "ISO": "CC",
+    "ISO3": "CCK",
+    "CountryName": "Cocos Islands",
+    "GeonameId": "1547376"
+},
+{
+    "ISO": "CD",
+    "ISO3": "COD",
+    "CountryName": "Democratic Republic of the Congo",
+    "GeonameId": "203312"
+},
+{
+    "ISO": "CF",
+    "ISO3": "CAF",
+    "CountryName": "Central African Republic",
+    "GeonameId": "239880"
+},
+{
+    "ISO": "CG",
+    "ISO3": "COG",
+    "CountryName": "Republic of the Congo",
+    "GeonameId": "2260494"
+},
+{
+    "ISO": "CH",
+    "ISO3": "CHE",
+    "CountryName": "Switzerland",
+    "GeonameId": "2658434"
+},
+{
+    "ISO": "CI",
+    "ISO3": "CIV",
+    "CountryName": "Ivory Coast",
+    "GeonameId": "2287781"
+},
+{
+    "ISO": "CK",
+    "ISO3": "COK",
+    "CountryName": "Cook Islands",
+    "GeonameId": "1899402"
+},
+{
+    "ISO": "CL",
+    "ISO3": "CHL",
+    "CountryName": "Chile",
+    "GeonameId": "3895114"
+},
+{
+    "ISO": "CM",
+    "ISO3": "CMR",
+    "CountryName": "Cameroon",
+    "GeonameId": "2233387"
+},
+{
+    "ISO": "CN",
+    "ISO3": "CHN",
+    "CountryName": "China",
+    "GeonameId": "1814991"
+},
+{
+    "ISO": "CO",
+    "ISO3": "COL",
+    "CountryName": "Colombia",
+    "GeonameId": "3686110"
+},
+{
+    "ISO": "CR",
+    "ISO3": "CRI",
+    "CountryName": "Costa Rica",
+    "GeonameId": "3624060"
+},
+{
+    "ISO": "CU",
+    "ISO3": "CUB",
+    "CountryName": "Cuba",
+    "GeonameId": "3562981"
+},
+{
+    "ISO": "CV",
+    "ISO3": "CPV",
+    "CountryName": "Cape Verde",
+    "GeonameId": "3374766"
+},
+{
+    "ISO": "CW",
+    "ISO3": "CUW",
+    "CountryName": "Curacao",
+    "GeonameId": "7626836"
+},
+{
+    "ISO": "CX",
+    "ISO3": "CXR",
+    "CountryName": "Christmas Island",
+    "GeonameId": "2078138"
+},
+{
+    "ISO": "CY",
+    "ISO3": "CYP",
+    "CountryName": "Cyprus",
+    "GeonameId": "146669"
+},
+{
+    "ISO": "CZ",
+    "ISO3": "CZE",
+    "CountryName": "Czechia",
+    "GeonameId": "3077311"
+},
+{
+    "ISO": "DE",
+    "ISO3": "DEU",
+    "CountryName": "Germany",
+    "GeonameId": "2921044"
+},
+{
+    "ISO": "DJ",
+    "ISO3": "DJI",
+    "CountryName": "Djibouti",
+    "GeonameId": "223816"
+},
+{
+    "ISO": "DK",
+    "ISO3": "DNK",
+    "CountryName": "Denmark",
+    "GeonameId": "2623032"
+},
+{
+    "ISO": "DM",
+    "ISO3": "DMA",
+    "CountryName": "Dominica",
+    "GeonameId": "3575830"
+},
+{
+    "ISO": "DO",
+    "ISO3": "DOM",
+    "CountryName": "Dominican Republic",
+    "GeonameId": "3508796"
+},
+{
+    "ISO": "DZ",
+    "ISO3": "DZA",
+    "CountryName": "Algeria",
+    "GeonameId": "2589581"
+},
+{
+    "ISO": "EC",
+    "ISO3": "ECU",
+    "CountryName": "Ecuador",
+    "GeonameId": "3658394"
+},
+{
+    "ISO": "EE",
+    "ISO3": "EST",
+    "CountryName": "Estonia",
+    "GeonameId": "453733"
+},
+{
+    "ISO": "EG",
+    "ISO3": "EGY",
+    "CountryName": "Egypt",
+    "GeonameId": "357994"
+},
+{
+    "ISO": "EH",
+    "ISO3": "ESH",
+    "CountryName": "Western Sahara",
+    "GeonameId": "2461445"
+},
+{
+    "ISO": "ER",
+    "ISO3": "ERI",
+    "CountryName": "Eritrea",
+    "GeonameId": "338010"
+},
+{
+    "ISO": "ES",
+    "ISO3": "ESP",
+    "CountryName": "Spain",
+    "GeonameId": "2510769"
+},
+{
+    "ISO": "ET",
+    "ISO3": "ETH",
+    "CountryName": "Ethiopia",
+    "GeonameId": "337996"
+},
+{
+    "ISO": "FI",
+    "ISO3": "FIN",
+    "CountryName": "Finland",
+    "GeonameId": "660013"
+},
+{
+    "ISO": "FJ",
+    "ISO3": "FJI",
+    "CountryName": "Fiji",
+    "GeonameId": "2205218"
+},
+{
+    "ISO": "FK",
+    "ISO3": "FLK",
+    "CountryName": "Falkland Islands",
+    "GeonameId": "3474414"
+},
+{
+    "ISO": "FM",
+    "ISO3": "FSM",
+    "CountryName": "Micronesia",
+    "GeonameId": "2081918"
+},
+{
+    "ISO": "FO",
+    "ISO3": "FRO",
+    "CountryName": "Faroe Islands",
+    "GeonameId": "2622320"
+},
+{
+    "ISO": "FR",
+    "ISO3": "FRA",
+    "CountryName": "France",
+    "GeonameId": "3017382"
+},
+{
+    "ISO": "GA",
+    "ISO3": "GAB",
+    "CountryName": "Gabon",
+    "GeonameId": "2400553"
+},
+{
+    "ISO": "GB",
+    "ISO3": "GBR",
+    "CountryName": "United Kingdom",
+    "GeonameId": "2635167"
+},
+{
+    "ISO": "GD",
+    "ISO3": "GRD",
+    "CountryName": "Grenada",
+    "GeonameId": "3580239"
+},
+{
+    "ISO": "GE",
+    "ISO3": "GEO",
+    "CountryName": "Georgia",
+    "GeonameId": "614540"
+},
+{
+    "ISO": "GF",
+    "ISO3": "GUF",
+    "CountryName": "French Guiana",
+    "GeonameId": "3381670"
+},
+{
+    "ISO": "GG",
+    "ISO3": "GGY",
+    "CountryName": "Guernsey",
+    "GeonameId": "3042362"
+},
+{
+    "ISO": "GH",
+    "ISO3": "GHA",
+    "CountryName": "Ghana",
+    "GeonameId": "2300660"
+},
+{
+    "ISO": "GI",
+    "ISO3": "GIB",
+    "CountryName": "Gibraltar",
+    "GeonameId": "2411586"
+},
+{
+    "ISO": "GL",
+    "ISO3": "GRL",
+    "CountryName": "Greenland",
+    "GeonameId": "3425505"
+},
+{
+    "ISO": "GM",
+    "ISO3": "GMB",
+    "CountryName": "Gambia",
+    "GeonameId": "2413451"
+},
+{
+    "ISO": "GN",
+    "ISO3": "GIN",
+    "CountryName": "Guinea",
+    "GeonameId": "2420477"
+},
+{
+    "ISO": "GP",
+    "ISO3": "GLP",
+    "CountryName": "Guadeloupe",
+    "GeonameId": "3579143"
+},
+{
+    "ISO": "GQ",
+    "ISO3": "GNQ",
+    "CountryName": "Equatorial Guinea",
+    "GeonameId": "2309096"
+},
+{
+    "ISO": "GR",
+    "ISO3": "GRC",
+    "CountryName": "Greece",
+    "GeonameId": "390903"
+},
+{
+    "ISO": "GS",
+    "ISO3": "SGS",
+    "CountryName": "South Georgia and the South Sandwich Islands",
+    "GeonameId": "3474415"
+},
+{
+    "ISO": "GT",
+    "ISO3": "GTM",
+    "CountryName": "Guatemala",
+    "GeonameId": "3595528"
+},
+{
+    "ISO": "GU",
+    "ISO3": "GUM",
+    "CountryName": "Guam",
+    "GeonameId": "4043988"
+},
+{
+    "ISO": "GW",
+    "ISO3": "GNB",
+    "CountryName": "Guinea-Bissau",
+    "GeonameId": "2372248"
+},
+{
+    "ISO": "GY",
+    "ISO3": "GUY",
+    "CountryName": "Guyana",
+    "GeonameId": "3378535"
+},
+{
+    "ISO": "HK",
+    "ISO3": "HKG",
+    "CountryName": "Hong Kong",
+    "GeonameId": "1819730"
+},
+{
+    "ISO": "HM",
+    "ISO3": "HMD",
+    "CountryName": "Heard Island and McDonald Islands",
+    "GeonameId": "1547314"
+},
+{
+    "ISO": "HN",
+    "ISO3": "HND",
+    "CountryName": "Honduras",
+    "GeonameId": "3608932"
+},
+{
+    "ISO": "HR",
+    "ISO3": "HRV",
+    "CountryName": "Croatia",
+    "GeonameId": "3202326"
+},
+{
+    "ISO": "HT",
+    "ISO3": "HTI",
+    "CountryName": "Haiti",
+    "GeonameId": "3723988"
+},
+{
+    "ISO": "HU",
+    "ISO3": "HUN",
+    "CountryName": "Hungary",
+    "GeonameId": "719819"
+},
+{
+    "ISO": "ID",
+    "ISO3": "IDN",
+    "CountryName": "Indonesia",
+    "GeonameId": "1643084"
+},
+{
+    "ISO": "IE",
+    "ISO3": "IRL",
+    "CountryName": "Ireland",
+    "GeonameId": "2963597"
+},
+{
+    "ISO": "IL",
+    "ISO3": "ISR",
+    "CountryName": "Israel",
+    "GeonameId": "294640"
+},
+{
+    "ISO": "IM",
+    "ISO3": "IMN",
+    "CountryName": "Isle of Man",
+    "GeonameId": "3042225"
+},
+{
+    "ISO": "IN",
+    "ISO3": "IND",
+    "CountryName": "India",
+    "GeonameId": "1269750"
+},
+{
+    "ISO": "IO",
+    "ISO3": "IOT",
+    "CountryName": "British Indian Ocean Territory",
+    "GeonameId": "1282588"
+},
+{
+    "ISO": "IQ",
+    "ISO3": "IRQ",
+    "CountryName": "Iraq",
+    "GeonameId": "99237"
+},
+{
+    "ISO": "IR",
+    "ISO3": "IRN",
+    "CountryName": "Iran",
+    "GeonameId": "130758"
+},
+{
+    "ISO": "IS",
+    "ISO3": "ISL",
+    "CountryName": "Iceland",
+    "GeonameId": "2629691"
+},
+{
+    "ISO": "IT",
+    "ISO3": "ITA",
+    "CountryName": "Italy",
+    "GeonameId": "3175395"
+},
+{
+    "ISO": "JE",
+    "ISO3": "JEY",
+    "CountryName": "Jersey",
+    "GeonameId": "3042142"
+},
+{
+    "ISO": "JM",
+    "ISO3": "JAM",
+    "CountryName": "Jamaica",
+    "GeonameId": "3489940"
+},
+{
+    "ISO": "JO",
+    "ISO3": "JOR",
+    "CountryName": "Jordan",
+    "GeonameId": "248816"
+},
+{
+    "ISO": "JP",
+    "ISO3": "JPN",
+    "CountryName": "Japan",
+    "GeonameId": "1861060"
+},
+{
+    "ISO": "KE",
+    "ISO3": "KEN",
+    "CountryName": "Kenya",
+    "GeonameId": "192950"
+},
+{
+    "ISO": "KG",
+    "ISO3": "KGZ",
+    "CountryName": "Kyrgyzstan",
+    "GeonameId": "1527747"
+},
+{
+    "ISO": "KH",
+    "ISO3": "KHM",
+    "CountryName": "Cambodia",
+    "GeonameId": "1831722"
+},
+{
+    "ISO": "KI",
+    "ISO3": "KIR",
+    "CountryName": "Kiribati",
+    "GeonameId": "4030945"
+},
+{
+    "ISO": "KM",
+    "ISO3": "COM",
+    "CountryName": "Comoros",
+    "GeonameId": "921929"
+},
+{
+    "ISO": "KN",
+    "ISO3": "KNA",
+    "CountryName": "Saint Kitts and Nevis",
+    "GeonameId": "3575174"
+},
+{
+    "ISO": "KP",
+    "ISO3": "PRK",
+    "CountryName": "North Korea",
+    "GeonameId": "1873107"
+},
+{
+    "ISO": "KR",
+    "ISO3": "KOR",
+    "CountryName": "South Korea",
+    "GeonameId": "1835841"
+},
+{
+    "ISO": "XK",
+    "ISO3": "XKX",
+    "CountryName": "Kosovo",
+    "GeonameId": "831053"
+},
+{
+    "ISO": "KW",
+    "ISO3": "KWT",
+    "CountryName": "Kuwait",
+    "GeonameId": "285570"
+},
+{
+    "ISO": "KY",
+    "ISO3": "CYM",
+    "CountryName": "Cayman Islands",
+    "GeonameId": "3580718"
+},
+{
+    "ISO": "KZ",
+    "ISO3": "KAZ",
+    "CountryName": "Kazakhstan",
+    "GeonameId": "1522867"
+},
+{
+    "ISO": "LA",
+    "ISO3": "LAO",
+    "CountryName": "Laos",
+    "GeonameId": "1655842"
+},
+{
+    "ISO": "LB",
+    "ISO3": "LBN",
+    "CountryName": "Lebanon",
+    "GeonameId": "272103"
+},
+{
+    "ISO": "LC",
+    "ISO3": "LCA",
+    "CountryName": "Saint Lucia",
+    "GeonameId": "3576468"
+},
+{
+    "ISO": "LI",
+    "ISO3": "LIE",
+    "CountryName": "Liechtenstein",
+    "GeonameId": "3042058"
+},
+{
+    "ISO": "LK",
+    "ISO3": "LKA",
+    "CountryName": "Sri Lanka",
+    "GeonameId": "1227603"
+},
+{
+    "ISO": "LR",
+    "ISO3": "LBR",
+    "CountryName": "Liberia",
+    "GeonameId": "2275384"
+},
+{
+    "ISO": "LS",
+    "ISO3": "LSO",
+    "CountryName": "Lesotho",
+    "GeonameId": "932692"
+},
+{
+    "ISO": "LT",
+    "ISO3": "LTU",
+    "CountryName": "Lithuania",
+    "GeonameId": "597427"
+},
+{
+    "ISO": "LU",
+    "ISO3": "LUX",
+    "CountryName": "Luxembourg",
+    "GeonameId": "2960313"
+},
+{
+    "ISO": "LV",
+    "ISO3": "LVA",
+    "CountryName": "Latvia",
+    "GeonameId": "458258"
+},
+{
+    "ISO": "LY",
+    "ISO3": "LBY",
+    "CountryName": "Libya",
+    "GeonameId": "2215636"
+},
+{
+    "ISO": "MA",
+    "ISO3": "MAR",
+    "CountryName": "Morocco",
+    "GeonameId": "2542007"
+},
+{
+    "ISO": "MC",
+    "ISO3": "MCO",
+    "CountryName": "Monaco",
+    "GeonameId": "2993457"
+},
+{
+    "ISO": "MD",
+    "ISO3": "MDA",
+    "CountryName": "Moldova",
+    "GeonameId": "617790"
+},
+{
+    "ISO": "ME",
+    "ISO3": "MNE",
+    "CountryName": "Montenegro",
+    "GeonameId": "3194884"
+},
+{
+    "ISO": "MF",
+    "ISO3": "MAF",
+    "CountryName": "Saint Martin",
+    "GeonameId": "3578421"
+},
+{
+    "ISO": "MG",
+    "ISO3": "MDG",
+    "CountryName": "Madagascar",
+    "GeonameId": "1062947"
+},
+{
+    "ISO": "MH",
+    "ISO3": "MHL",
+    "CountryName": "Marshall Islands",
+    "GeonameId": "2080185"
+},
+{
+    "ISO": "MK",
+    "ISO3": "MKD",
+    "CountryName": "Macedonia",
+    "GeonameId": "718075"
+},
+{
+    "ISO": "ML",
+    "ISO3": "MLI",
+    "CountryName": "Mali",
+    "GeonameId": "2453866"
+},
+{
+    "ISO": "MM",
+    "ISO3": "MMR",
+    "CountryName": "Myanmar",
+    "GeonameId": "1327865"
+},
+{
+    "ISO": "MN",
+    "ISO3": "MNG",
+    "CountryName": "Mongolia",
+    "GeonameId": "2029969"
+},
+{
+    "ISO": "MO",
+    "ISO3": "MAC",
+    "CountryName": "Macao",
+    "GeonameId": "1821275"
+},
+{
+    "ISO": "MP",
+    "ISO3": "MNP",
+    "CountryName": "Northern Mariana Islands",
+    "GeonameId": "4041468"
+},
+{
+    "ISO": "MQ",
+    "ISO3": "MTQ",
+    "CountryName": "Martinique",
+    "GeonameId": "3570311"
+},
+{
+    "ISO": "MR",
+    "ISO3": "MRT",
+    "CountryName": "Mauritania",
+    "GeonameId": "2378080"
+},
+{
+    "ISO": "MS",
+    "ISO3": "MSR",
+    "CountryName": "Montserrat",
+    "GeonameId": "3578097"
+},
+{
+    "ISO": "MT",
+    "ISO3": "MLT",
+    "CountryName": "Malta",
+    "GeonameId": "2562770"
+},
+{
+    "ISO": "MU",
+    "ISO3": "MUS",
+    "CountryName": "Mauritius",
+    "GeonameId": "934292"
+},
+{
+    "ISO": "MV",
+    "ISO3": "MDV",
+    "CountryName": "Maldives",
+    "GeonameId": "1282028"
+},
+{
+    "ISO": "MW",
+    "ISO3": "MWI",
+    "CountryName": "Malawi",
+    "GeonameId": "927384"
+},
+{
+    "ISO": "MX",
+    "ISO3": "MEX",
+    "CountryName": "Mexico",
+    "GeonameId": "3996063"
+},
+{
+    "ISO": "MY",
+    "ISO3": "MYS",
+    "CountryName": "Malaysia",
+    "GeonameId": "1733045"
+},
+{
+    "ISO": "MZ",
+    "ISO3": "MOZ",
+    "CountryName": "Mozambique",
+    "GeonameId": "1036973"
+},
+{
+    "ISO": "NA",
+    "ISO3": "NAM",
+    "CountryName": "Namibia",
+    "GeonameId": "3355338"
+},
+{
+    "ISO": "NC",
+    "ISO3": "NCL",
+    "CountryName": "New Caledonia",
+    "GeonameId": "2139685"
+},
+{
+    "ISO": "NE",
+    "ISO3": "NER",
+    "CountryName": "Niger",
+    "GeonameId": "2440476"
+},
+{
+    "ISO": "NF",
+    "ISO3": "NFK",
+    "CountryName": "Norfolk Island",
+    "GeonameId": "2155115"
+},
+{
+    "ISO": "NG",
+    "ISO3": "NGA",
+    "CountryName": "Nigeria",
+    "GeonameId": "2328926"
+},
+{
+    "ISO": "NI",
+    "ISO3": "NIC",
+    "CountryName": "Nicaragua",
+    "GeonameId": "3617476"
+},
+{
+    "ISO": "NL",
+    "ISO3": "NLD",
+    "CountryName": "Netherlands",
+    "GeonameId": "2750405"
+},
+{
+    "ISO": "NO",
+    "ISO3": "NOR",
+    "CountryName": "Norway",
+    "GeonameId": "3144096"
+},
+{
+    "ISO": "NP",
+    "ISO3": "NPL",
+    "CountryName": "Nepal",
+    "GeonameId": "1282988"
+},
+{
+    "ISO": "NR",
+    "ISO3": "NRU",
+    "CountryName": "Nauru",
+    "GeonameId": "2110425"
+},
+{
+    "ISO": "NU",
+    "ISO3": "NIU",
+    "CountryName": "Niue",
+    "GeonameId": "4036232"
+},
+{
+    "ISO": "NZ",
+    "ISO3": "NZL",
+    "CountryName": "New Zealand",
+    "GeonameId": "2186224"
+},
+{
+    "ISO": "OM",
+    "ISO3": "OMN",
+    "CountryName": "Oman",
+    "GeonameId": "286963"
+},
+{
+    "ISO": "PA",
+    "ISO3": "PAN",
+    "CountryName": "Panama",
+    "GeonameId": "3703430"
+},
+{
+    "ISO": "PE",
+    "ISO3": "PER",
+    "CountryName": "Peru",
+    "GeonameId": "3932488"
+},
+{
+    "ISO": "PF",
+    "ISO3": "PYF",
+    "CountryName": "French Polynesia",
+    "GeonameId": "4030656"
+},
+{
+    "ISO": "PG",
+    "ISO3": "PNG",
+    "CountryName": "Papua New Guinea",
+    "GeonameId": "2088628"
+},
+{
+    "ISO": "PH",
+    "ISO3": "PHL",
+    "CountryName": "Philippines",
+    "GeonameId": "1694008"
+},
+{
+    "ISO": "PK",
+    "ISO3": "PAK",
+    "CountryName": "Pakistan",
+    "GeonameId": "1168579"
+},
+{
+    "ISO": "PL",
+    "ISO3": "POL",
+    "CountryName": "Poland",
+    "GeonameId": "798544"
+},
+{
+    "ISO": "PM",
+    "ISO3": "SPM",
+    "CountryName": "Saint Pierre and Miquelon",
+    "GeonameId": "3424932"
+},
+{
+    "ISO": "PN",
+    "ISO3": "PCN",
+    "CountryName": "Pitcairn",
+    "GeonameId": "4030699"
+},
+{
+    "ISO": "PR",
+    "ISO3": "PRI",
+    "CountryName": "Puerto Rico",
+    "GeonameId": "4566966"
+},
+{
+    "ISO": "PS",
+    "ISO3": "PSE",
+    "CountryName": "Palestinian Territory",
+    "GeonameId": "6254930"
+},
+{
+    "ISO": "PT",
+    "ISO3": "PRT",
+    "CountryName": "Portugal",
+    "GeonameId": "2264397"
+},
+{
+    "ISO": "PW",
+    "ISO3": "PLW",
+    "CountryName": "Palau",
+    "GeonameId": "1559582"
+},
+{
+    "ISO": "PY",
+    "ISO3": "PRY",
+    "CountryName": "Paraguay",
+    "GeonameId": "3437598"
+},
+{
+    "ISO": "QA",
+    "ISO3": "QAT",
+    "CountryName": "Qatar",
+    "GeonameId": "289688"
+},
+{
+    "ISO": "RE",
+    "ISO3": "REU",
+    "CountryName": "Reunion",
+    "GeonameId": "935317"
+},
+{
+    "ISO": "RO",
+    "ISO3": "ROU",
+    "CountryName": "Romania",
+    "GeonameId": "798549"
+},
+{
+    "ISO": "RS",
+    "ISO3": "SRB",
+    "CountryName": "Serbia",
+    "GeonameId": "6290252"
+},
+{
+    "ISO": "RU",
+    "ISO3": "RUS",
+    "CountryName": "Russia",
+    "GeonameId": "2017370"
+},
+{
+    "ISO": "RW",
+    "ISO3": "RWA",
+    "CountryName": "Rwanda",
+    "GeonameId": "49518"
+},
+{
+    "ISO": "SA",
+    "ISO3": "SAU",
+    "CountryName": "Saudi Arabia",
+    "GeonameId": "102358"
+},
+{
+    "ISO": "SB",
+    "ISO3": "SLB",
+    "CountryName": "Solomon Islands",
+    "GeonameId": "2103350"
+},
+{
+    "ISO": "SC",
+    "ISO3": "SYC",
+    "CountryName": "Seychelles",
+    "GeonameId": "241170"
+},
+{
+    "ISO": "SD",
+    "ISO3": "SDN",
+    "CountryName": "Sudan",
+    "GeonameId": "366755"
+},
+{
+    "ISO": "SS",
+    "ISO3": "SSD",
+    "CountryName": "South Sudan",
+    "GeonameId": "7909807"
+},
+{
+    "ISO": "SE",
+    "ISO3": "SWE",
+    "CountryName": "Sweden",
+    "GeonameId": "2661886"
+},
+{
+    "ISO": "SG",
+    "ISO3": "SGP",
+    "CountryName": "Singapore",
+    "GeonameId": "1880251"
+},
+{
+    "ISO": "SH",
+    "ISO3": "SHN",
+    "CountryName": "Saint Helena",
+    "GeonameId": "3370751"
+},
+{
+    "ISO": "SI",
+    "ISO3": "SVN",
+    "CountryName": "Slovenia",
+    "GeonameId": "3190538"
+},
+{
+    "ISO": "SJ",
+    "ISO3": "SJM",
+    "CountryName": "Svalbard and Jan Mayen",
+    "GeonameId": "607072"
+},
+{
+    "ISO": "SK",
+    "ISO3": "SVK",
+    "CountryName": "Slovakia",
+    "GeonameId": "3057568"
+},
+{
+    "ISO": "SL",
+    "ISO3": "SLE",
+    "CountryName": "Sierra Leone",
+    "GeonameId": "2403846"
+},
+{
+    "ISO": "SM",
+    "ISO3": "SMR",
+    "CountryName": "San Marino",
+    "GeonameId": "3168068"
+},
+{
+    "ISO": "SN",
+    "ISO3": "SEN",
+    "CountryName": "Senegal",
+    "GeonameId": "2245662"
+},
+{
+    "ISO": "SO",
+    "ISO3": "SOM",
+    "CountryName": "Somalia",
+    "GeonameId": "51537"
+},
+{
+    "ISO": "SR",
+    "ISO3": "SUR",
+    "CountryName": "Suriname",
+    "GeonameId": "3382998"
+},
+{
+    "ISO": "ST",
+    "ISO3": "STP",
+    "CountryName": "Sao Tome and Principe",
+    "GeonameId": "2410758"
+},
+{
+    "ISO": "SV",
+    "ISO3": "SLV",
+    "CountryName": "El Salvador",
+    "GeonameId": "3585968"
+},
+{
+    "ISO": "SX",
+    "ISO3": "SXM",
+    "CountryName": "Sint Maarten",
+    "GeonameId": "7609695"
+},
+{
+    "ISO": "SY",
+    "ISO3": "SYR",
+    "CountryName": "Syria",
+    "GeonameId": "163843"
+},
+{
+    "ISO": "SZ",
+    "ISO3": "SWZ",
+    "CountryName": "Swaziland",
+    "GeonameId": "934841"
+},
+{
+    "ISO": "TC",
+    "ISO3": "TCA",
+    "CountryName": "Turks and Caicos Islands",
+    "GeonameId": "3576916"
+},
+{
+    "ISO": "TD",
+    "ISO3": "TCD",
+    "CountryName": "Chad",
+    "GeonameId": "2434508"
+},
+{
+    "ISO": "TF",
+    "ISO3": "ATF",
+    "CountryName": "French Southern Territories",
+    "GeonameId": "1546748"
+},
+{
+    "ISO": "TG",
+    "ISO3": "TGO",
+    "CountryName": "Togo",
+    "GeonameId": "2363686"
+},
+{
+    "ISO": "TH",
+    "ISO3": "THA",
+    "CountryName": "Thailand",
+    "GeonameId": "1605651"
+},
+{
+    "ISO": "TJ",
+    "ISO3": "TJK",
+    "CountryName": "Tajikistan",
+    "GeonameId": "1220409"
+},
+{
+    "ISO": "TK",
+    "ISO3": "TKL",
+    "CountryName": "Tokelau",
+    "GeonameId": "4031074"
+},
+{
+    "ISO": "TL",
+    "ISO3": "TLS",
+    "CountryName": "East Timor",
+    "GeonameId": "1966436"
+},
+{
+    "ISO": "TM",
+    "ISO3": "TKM",
+    "CountryName": "Turkmenistan",
+    "GeonameId": "1218197"
+},
+{
+    "ISO": "TN",
+    "ISO3": "TUN",
+    "CountryName": "Tunisia",
+    "GeonameId": "2464461"
+},
+{
+    "ISO": "TO",
+    "ISO3": "TON",
+    "CountryName": "Tonga",
+    "GeonameId": "4032283"
+},
+{
+    "ISO": "TR",
+    "ISO3": "TUR",
+    "CountryName": "Turkey",
+    "GeonameId": "298795"
+},
+{
+    "ISO": "TT",
+    "ISO3": "TTO",
+    "CountryName": "Trinidad and Tobago",
+    "GeonameId": "3573591"
+},
+{
+    "ISO": "TV",
+    "ISO3": "TUV",
+    "CountryName": "Tuvalu",
+    "GeonameId": "2110297"
+},
+{
+    "ISO": "TW",
+    "ISO3": "TWN",
+    "CountryName": "Taiwan",
+    "GeonameId": "1668284"
+},
+{
+    "ISO": "TZ",
+    "ISO3": "TZA",
+    "CountryName": "Tanzania",
+    "GeonameId": "149590"
+},
+{
+    "ISO": "UA",
+    "ISO3": "UKR",
+    "CountryName": "Ukraine",
+    "GeonameId": "690791"
+},
+{
+    "ISO": "UG",
+    "ISO3": "UGA",
+    "CountryName": "Uganda",
+    "GeonameId": "226074"
+},
+{
+    "ISO": "UM",
+    "ISO3": "UMI",
+    "CountryName": "United States Minor Outlying Islands",
+    "GeonameId": "5854968"
+},
+{
+    "ISO": "US",
+    "ISO3": "USA",
+    "CountryName": "United States",
+    "GeonameId": "6252001"
+},
+{
+    "ISO": "UY",
+    "ISO3": "URY",
+    "CountryName": "Uruguay",
+    "GeonameId": "3439705"
+},
+{
+    "ISO": "UZ",
+    "ISO3": "UZB",
+    "CountryName": "Uzbekistan",
+    "GeonameId": "1512440"
+},
+{
+    "ISO": "VA",
+    "ISO3": "VAT",
+    "CountryName": "Vatican",
+    "GeonameId": "3164670"
+},
+{
+    "ISO": "VC",
+    "ISO3": "VCT",
+    "CountryName": "Saint Vincent and the Grenadines",
+    "GeonameId": "3577815"
+},
+{
+    "ISO": "VE",
+    "ISO3": "VEN",
+    "CountryName": "Venezuela",
+    "GeonameId": "3625428"
+},
+{
+    "ISO": "VG",
+    "ISO3": "VGB",
+    "CountryName": "British Virgin Islands",
+    "GeonameId": "3577718"
+},
+{
+    "ISO": "VI",
+    "ISO3": "VIR",
+    "CountryName": "U.S. Virgin Islands",
+    "GeonameId": "4796775"
+},
+{
+    "ISO": "VN",
+    "ISO3": "VNM",
+    "CountryName": "Vietnam",
+    "GeonameId": "1562822"
+},
+{
+    "ISO": "VU",
+    "ISO3": "VUT",
+    "CountryName": "Vanuatu",
+    "GeonameId": "2134431"
+},
+{
+    "ISO": "WF",
+    "ISO3": "WLF",
+    "CountryName": "Wallis and Futuna",
+    "GeonameId": "4034749"
+},
+{
+    "ISO": "WS",
+    "ISO3": "WSM",
+    "CountryName": "Samoa",
+    "GeonameId": "4034894"
+},
+{
+    "ISO": "YE",
+    "ISO3": "YEM",
+    "CountryName": "Yemen",
+    "GeonameId": "69543"
+},
+{
+    "ISO": "YT",
+    "ISO3": "MYT",
+    "CountryName": "Mayotte",
+    "GeonameId": "1024031"
+},
+{
+    "ISO": "ZA",
+    "ISO3": "ZAF",
+    "CountryName": "South Africa",
+    "GeonameId": "953987"
+},
+{
+    "ISO": "ZM",
+    "ISO3": "ZMB",
+    "CountryName": "Zambia",
+    "GeonameId": "895949"
+},
+{
+    "ISO": "ZW",
+    "ISO3": "ZWE",
+    "CountryName": "Zimbabwe",
+    "GeonameId": "878675"
+},
+{
+    "ISO": "CS",
+    "ISO3": "SCG",
+    "CountryName": "Serbia and Montenegro",
+    "GeonameId": "8505033"
+},
+{
+    "ISO": "AN",
+    "ISO3": "ANT",
+    "CountryName": "Netherlands Antilles",
+    "GeonameId": "8505032"
+}
+]

@@ -181,8 +181,14 @@ def filterAdmin1CodesASCII(source, destination):
     newCsv.close()
     dataCsv.close()
 
+
+
+
+
 """
     takes filteredCountryInfo.csv and converts it to countryInfo.json
+
+    this json format is validated by https://jsonlint.com/ they are awesome!
 """
 def countryInfoCsv2Json(source, destination):
 
@@ -193,14 +199,27 @@ def countryInfoCsv2Json(source, destination):
     dataCsv  = openFile(source)
     dataCsvReader = csv.reader(dataCsv, delimiter=',')
 
-    for row in dataCsvReader:
 
-        jsonRow = ("{\'ISO\': \'" + row[0] + "\', \'ISO3\' : \'" + row[1]+ "\', \'CountryName\' : \'" + row[2] + "\', \'GeonameId\' : \'" + row[3] + "\'}")
+    #opens json object array
+    newJson.write("[\n")
+
+    for row in dataCsvReader:
 
         data = {'ISO' : row[0], 'ISO3' : row[1], 'CountryName' : row[2],
             'GeonameId' : row[3]}
 
-        json.dump(data, newJson)
+        json.dump(data, newJson, indent=4)
+
+        #adds comman and new line after each json object
+        newJson.write(",\n")
+
+    """
+    removes extra comma from the end of the last json object
+        and closes json array
+    """
+    pos = newJson.tell()
+    newJson.seek(pos-3)
+    newJson.write("}\n]")
 
     #closed open files
     newJson.close()
@@ -225,7 +244,7 @@ def main():
     if(not os.path.exists('./DATA')):
         os.makedirs('./DATA')
 
-
+    """
     countryInfoTxt2Csv('./srcDATA/countryInfo.txt', './csvDATA/countryInfo.csv', False)
 
     admin1CodesASCIITxt2Csv('./srcDATA/admin1CodesASCII.txt', './csvDATA/admin1CodesASCII.csv')
@@ -233,6 +252,7 @@ def main():
     filterCountryInfo('./csvDATA/countryInfo.csv', './DATA/filteredCountryInfo.csv')
 
     filterAdmin1CodesASCII('./csvDATA/admin1CodesASCII.csv', './DATA/filteredAdmin1CodesASCII.csv')
+    """
 
     countryInfoCsv2Json('./DATA/filteredCountryInfo.csv', './DATA/countryInfo.json')
 

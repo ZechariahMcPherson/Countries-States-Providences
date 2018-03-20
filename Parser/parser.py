@@ -227,6 +227,51 @@ def countryInfoCsv2Json(source, destination):
 
 
 """
+    takes filteredAdmin1CodesASCII.csv and converts it to
+        adminCodes.json
+
+    Note: Currently I only have United State's state ISOs in the json
+        other states and provinces of the world do not have their ISOs listed
+
+    this json format is validated by https://jsonlint.com/ they are awesome!
+"""
+def adminCodesCsv2Json(source, destination):
+
+    #creates csv file and a writer to write to that file
+    newJson = createFile(destination, 'wt')
+
+    #opens data file and creates a reader for that file
+    dataCsv  = openFile(source)
+    dataCsvReader = csv.reader(dataCsv, delimiter=',')
+
+
+    #opens json object array
+    newJson.write("[\n")
+
+    for row in dataCsvReader:
+
+        data = {'CountryISO' : row[0], 'StateISO' : row[1], 'StateProvince' : row[2], 'GeonameId' : row[3]}
+
+        json.dump(data, newJson, indent=4)
+
+        #adds comman and new line after each json object
+        newJson.write(",\n")
+
+    """
+    removes extra comma from the end of the last json object
+        and closes json array
+    """
+    pos = newJson.tell()
+    newJson.seek(pos-3)
+    newJson.write("}\n]")
+
+    #closed open files
+    newJson.close()
+    dataCsv.close()
+
+
+
+"""
     controls flow of parser
 """
 def main():
@@ -252,8 +297,11 @@ def main():
     filterCountryInfo('./csvDATA/countryInfo.csv', './DATA/filteredCountryInfo.csv')
 
     filterAdmin1CodesASCII('./csvDATA/admin1CodesASCII.csv', './DATA/filteredAdmin1CodesASCII.csv')
-    """
+
 
     countryInfoCsv2Json('./DATA/filteredCountryInfo.csv', './DATA/countryInfo.json')
+
+    adminCodesCsv2Json('./DATA/filteredAdmin1CodesASCII.csv', './DATA/adminCodes.json')
+    """
 
 main()

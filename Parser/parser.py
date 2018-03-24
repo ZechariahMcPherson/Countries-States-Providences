@@ -283,7 +283,7 @@ def adminCodesCsv2Json(source, destination):
     this json format is validated by https://jsonlint.com/ they are awesome!
 """
 def createCountryAndStatesJson(countryInfoPath, adminCodesPath,
-    countriesAndStatesJson ):
+    countriesAndStatesPath):
 
     #creates csv file and a writer to write to that file
     #newJson = createFile(countriesAndStatesJson, 'wt')
@@ -294,7 +294,7 @@ def createCountryAndStatesJson(countryInfoPath, adminCodesPath,
     #opens data file and creates a reader for that file
     #statesJson  = openFile(adminCodesJson)
 
-    countriesAndStatesData = createFile(countriesAndStatesPath, 'wt')
+    countriesAndStatesFile = createFile(countriesAndStatesPath, 'wt')
 
     countryInfoFile = openFile(countryInfoPath)
 
@@ -305,12 +305,17 @@ def createCountryAndStatesJson(countryInfoPath, adminCodesPath,
     adminCodesData = json.load(adminCodesFile)
 
     #opens json object array
-    countriesAndStatesData.write("[\n")
+    countriesAndStatesFile.write("[\n")
 
     for rowCountryInfo in countryInfoData:
 
         #object array of all of the states associated with the country
         statesList = []
+        '''
+        data = {'ISO' : rowCountryInfo['ISO'], 'ISO3' : rowCountryInfo['ISO3'], 'CountryName' : rowCountryInfo['ISO3'], 'GeonameId' : rowCountryInfo['GeonameId']}
+        '''
+
+        #json.dump(data,countriesAndStatesFile, indent=4)
 
         for rowAdminCodes in adminCodesData:
 
@@ -321,12 +326,18 @@ def createCountryAndStatesJson(countryInfoPath, adminCodesPath,
                 {'CountryISO' : rowAdminCodes['CountryISO'], 'StateISO' : rowAdminCodes['StateISO'], 'StateProvince' : rowAdminCodes['StateProvince'], 'GeonameId' : rowAdminCodes['GeonameId']})
 
 
-        #write country entry into countriesAndStates json
-        data = {'ISO' : rowCountryInfo['ISO'], 'ISO3' : rowCountryInfo['ISO3'], 'CountryName' : rowCountryInfo['ISO3'], 'GeonameId' : rowCountryInfo['GeonameId'], 'States' : statesList.copy()}
+        data = {'ISO' : rowCountryInfo['ISO'], 'ISO3' : rowCountryInfo['ISO3'], 'CountryName' : rowCountryInfo['CountryName'], 'GeonameId' : rowCountryInfo['GeonameId'], 'States' : statesList.copy()}
 
+        #write state object array into country object
+        #stateData = statesList.copy()
 
+        json.dump(data,countriesAndStatesFile, indent=4)
 
+        countriesAndStatesFile.write(',\n')
 
+    pos = countriesAndStatesFile.tell()
+    countriesAndStatesFile.seek(pos-3)
+    countriesAndStatesFile.write("}\n]")
 
 
 
@@ -360,8 +371,8 @@ def createCountryAndStatesJson(countryInfoPath, adminCodesPath,
 
     #closed open files
     countryInfoFile.close()
-    adminCodesPath.close()
-    countriesAndStatesData.close()
+    adminCodesFile.close()
+    countryInfoFile.close()
 
 
 """

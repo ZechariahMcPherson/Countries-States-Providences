@@ -1,6 +1,6 @@
 {
   "name": "countries-states-providences",
-  "version": "1.0.0",
+  "version": "0.1",
   "description": "List of countries and their associated states/providences",
   "main": "index.js",
   "scripts": {

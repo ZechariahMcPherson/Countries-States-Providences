@@ -326,6 +326,8 @@ def createCountryAndStatesJson(countryInfoPath, adminCodesPath,
                 {'CountryISO' : rowAdminCodes['CountryISO'], 'StateISO' : rowAdminCodes['StateISO'], 'StateProvince' : rowAdminCodes['StateProvince'], 'GeonameId' : rowAdminCodes['GeonameId']})
 
 
+        statesList.sort(key=lambda x: x['StateProvince'])
+
         data = {'ISO' : rowCountryInfo['ISO'], 'ISO3' : rowCountryInfo['ISO3'], 'CountryName' : rowCountryInfo['CountryName'], 'GeonameId' : rowCountryInfo['GeonameId'], 'States' : statesList.copy()}
 
         #write state object array into country object

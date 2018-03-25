@@ -274,8 +274,8 @@ def adminCodesCsv2Json(source, destination):
 
 
 """
-    takes filteredAdmin1CodesASCII.csv and converts it to
-        adminCodes.json
+    takes countryInfo.csv(countries) and adminCodes.csv (states)
+        and zippes them together
 
     Note: Currently I only have United State's state ISOs in the json
         other states and provinces of the world do not have their ISOs listed
@@ -285,38 +285,31 @@ def adminCodesCsv2Json(source, destination):
 def createCountryAndStatesJson(countryInfoPath, adminCodesPath,
     countriesAndStatesPath):
 
-    #creates csv file and a writer to write to that file
-    #newJson = createFile(countriesAndStatesJson, 'wt')
-
-    #opens data file and creates a reader for that file
-    #countryJson  = openFile(countryInfoJson)
-
-    #opens data file and creates a reader for that file
-    #statesJson  = openFile(adminCodesJson)
-
+    #json with countries and their corrosponding states
     countriesAndStatesFile = createFile(countriesAndStatesPath, 'wt')
 
+    #file with list of countries
     countryInfoFile = openFile(countryInfoPath)
 
+    #json reader for list of countries
     countryInfoData = json.load(countryInfoFile)
 
+    #file with list of states
     adminCodesFile = openFile(adminCodesPath)
 
+    #json read for list of states
     adminCodesData = json.load(adminCodesFile)
 
     #opens json object array
     countriesAndStatesFile.write("[\n")
 
+    #reads through list of countries
     for rowCountryInfo in countryInfoData:
 
         #object array of all of the states associated with the country
         statesList = []
-        '''
-        data = {'ISO' : rowCountryInfo['ISO'], 'ISO3' : rowCountryInfo['ISO3'], 'CountryName' : rowCountryInfo['ISO3'], 'GeonameId' : rowCountryInfo['GeonameId']}
-        '''
 
-        #json.dump(data,countriesAndStatesFile, indent=4)
-
+        #reads through the list of states
         for rowAdminCodes in adminCodesData:
 
             #if the country has a state
@@ -326,50 +319,23 @@ def createCountryAndStatesJson(countryInfoPath, adminCodesPath,
                 {'CountryISO' : rowAdminCodes['CountryISO'], 'StateISO' : rowAdminCodes['StateISO'], 'StateProvince' : rowAdminCodes['StateProvince'], 'GeonameId' : rowAdminCodes['GeonameId']})
 
 
-        statesList.sort(key=lambda x: x['StateProvince'])
+        #sorts states by their name value
+        statesList.sort(key=lambda state: state['StateProvince'])
 
+        #json object for a country and its corrosponding states
         data = {'ISO' : rowCountryInfo['ISO'], 'ISO3' : rowCountryInfo['ISO3'], 'CountryName' : rowCountryInfo['CountryName'], 'GeonameId' : rowCountryInfo['GeonameId'], 'States' : statesList.copy()}
 
-        #write state object array into country object
-        #stateData = statesList.copy()
-
+        #write object to json
         json.dump(data,countriesAndStatesFile, indent=4)
 
+        #adds comma after each object
         countriesAndStatesFile.write(',\n')
 
+    #romoves dangling comma and closes object array
     pos = countriesAndStatesFile.tell()
     countriesAndStatesFile.seek(pos-3)
     countriesAndStatesFile.write("}\n]")
 
-
-
-    #print(data[0])
-
-    #opens json object array
-    '''
-    newJson.write("[\n")
-
-    for row in dataCsvReader:
-
-        data = {'CountryISO' : row[0], 'StateISO' : row[1], 'StateProvince' : row[2], 'GeonameId' : row[3]}
-
-        json.dump(data, newJson, indent=4)
-
-        #adds comman and new line after each json object
-        newJson.write(",\n")
-
-    '''
-
-    """
-    removes extra comma from the end of the last json object
-        and closes json array
-    """
-    '''
-    pos = newJson.tell()
-    newJson.seek(pos-3)
-    newJson.write("}\n]")
-
-    '''
 
     #closed open files
     countryInfoFile.close()
